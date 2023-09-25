@@ -1,0 +1,362 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UX Project Checklist</title>
+    <link rel="shortcut icon" href="favicon.ico?v=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta property="og:title" content="UX Project Checklist" />
+    <meta property="og:ulr" content="http://uxchecklist.github.io/" />
+    <meta property="og:image" content="http://uxchecklist.github.io/apple-touch-icon.png" />
+    <meta property="og:description" content="Start your next UX project with this checklist and don't forget about anything!" />
+    <meta name="google-site-verification" content="3Dof5ybDW6vSpHqG5nnJubTZeQ9mYWihL5mPP02FxtA" />
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- moonmail.io embedded form styles (for better performance put this link in html head of your page) -->
+    <link rel="stylesheet" href="https://static.moonmail.io/mm-embedded-form.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!-- <script src="js/vendor/modernizr.js"></script> -->
+    <!-- GA plugin -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    if (document.location.hostname == "uxchecklist.github.io") {
+        ga('create', 'UA-57141076-1', 'auto');
+    } else if (document.location.hostname == "localhost") {
+        ga('create', 'UA-57141076-2', 'auto');
+    }
+    ga('send', 'pageview');
+    </script>
+</head>
+
+<body class="body-single">
+    <div id="fb-root"></div>
+    <script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=118274511611887&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <div id="printTitle" class="hidden">Project name: ________________________</div>
+    <header id="header" class="flexcontainer">
+        <div id="title" class="hide-for-print">
+            <h1>UX Project Checklist</h1>
+        </div>
+        <div id="gdrivebox" class="hide-for-print flexgrow">
+            <span id="signin-do">
+                    <button id="signin"><i class="fa fa-sign-in"></i>Sign in with Google</button> to sync across devices.
+                    <a href="#signin-info" class="open-popup-link"></a>
+                </span>
+            <span id="signin-failed">Sign in failed! :(</span>
+            <span id="signin-success">You're signed in with Google.</span>
+            <div id="signin-info" class="white-popup mfp-hide">
+                <p>We use Google Drive to create and save a file on your account so you will be able to open the same checklist on all your connected devices.
+                </p>
+                <p>
+                    And guess what?! You can share it! </br>
+                    Well, yeah is not a big deal, but it come for free, yes like everything else, what I mean is that we didn't had to do anything for that, right? So basically you connect with Google, we create the file, you go to your Google Drive folder, try to find the new file, I have no idea where it is or what the name will be, the <a href="https://twitter.com/alefranz" target="_blank">guy</a> who did this didn't tell us, once you've found the file share it with your friends. Done! </br>
+                    When your friends connect their Google account they should see the same checklist status. </br>
+                    Magic isn't it? No! That's technology fool!
+                </p>
+                <p>Also, we will not use any of your data, we didn't have any kind of database or save something somewhere in any way, the file we create is yours and yours only and is the only thing we are able to do right now.
+                </p>
+                <p>
+                    Oh, and just want to remind you that if you still not believe it, everything is open source and you can check the github repo <a href="https://github.com/uxchecklist/uxchecklist.github.io" target="_blank">here</a> (feel free to fork it and do awesome things, or help us make it better).
+                </p>
+            </div>
+        </div>
+        <div id="sharebox" class="hide-for-print">
+            <ul>
+                <li>
+                    <!-- facebook plugin -->
+                    <div class="fb-like" data-href="http://uxchecklist.github.io/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
+                </li>
+                <li>
+                    <!-- linkedin plugin -->
+                    <script src="//platform.linkedin.com/in.js" type="text/javascript">
+                    lang: en_US
+                    </script>
+                    <script type="IN/Share" data-counter="right"></script>
+                </li>
+                <li>
+                    <!-- twitter plugin -->
+                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="UX Project Checklist: The UX Design Process From A to Z" data-via="sovesove" data-hashtags="ux,uxchecklist">Tweet</a>
+                    <script>
+                    ! function(d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0],
+                            p = /^http:/.test(d.location) ? 'http' : 'https';
+                        if (!d.getElementById(id)) {
+                            js = d.createElement(s);
+                            js.id = id;
+                            js.src = p + '://platform.twitter.com/widgets.js';
+                            fjs.parentNode.insertBefore(js, fjs);
+                        }
+                    }(document, 'script', 'twitter-wjs');
+                    </script>
+                </li>
+            </ul>
+        </div>
+        <div class="support-us-wrapper hide-for-print">
+            <!-- PayPal donate button -->
+            <div class="wrapper-paypal-button hide-for-print">
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick">
+                    <input type="hidden" name="hosted_button_id" value="CZJKKFXRARWJL">
+                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"> <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
+                </form>
+            </div>
+            <!-- PayPal donate button END -->
+            <!-- Patreon -->
+            <div class="wrapper-patreon-button hide-for-print not-released">
+                <iframe src="/widgets/patreon.html" frameborder="0" height="auto" scrolling="no" width="100%"></iframe>
+            </div>
+            <!-- Patreon END -->
+        </div>
+    </header>
+    <div class="books-card">
+        <div class="image-card">
+            <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515?crid=ZEADMK6SM7CT&keywords=Don%27t+Make+Me+Think&qid=1695098663&s=books&sprefix=don%27t+make+me+think%2Cstripbooks%2C858&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=dc950c5f3c7ef065e08921759a1d15a9&language=en_US&ref_=as_li_ss_il" target="_blank">
+               <img src="img/DontMakeMeThink.jpg"/>
+            </a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Design-Everyday-Things-Revised-Expanded/dp/0465050654?_encoding=UTF8&qid=1695098686&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=5a6010f87f01fff363e9954c618b1b84&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/thedessign.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Lean-UX-Applying-Principles-Experience/dp/1449311652?crid=LWU46YO2L1FE&keywords=Lean+UX&qid=1695098713&s=books&sprefix=lean+ux%2Cstripbooks%2C519&sr=1-4&linkCode=li2&tag=uxchecklist-20&linkId=551d84411517dc470701b546356b4944&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/leanux.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Seductive-Interaction-Design-Effective-Experiences/dp/0321725522?crid=82E4TYSHM86K&keywords=Seductive+Interaction+Design&qid=1695098742&s=books&sprefix=lean+ux%2Cstripbooks%2C589&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=85b736587df8f2c27b316f2685ed880f&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/suductive.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Things-Designer-People-Voices-Matter/dp/0136746918?crid=Q4DYKEKQUDYL&keywords=100+Things+Every+Designer+Needs+to+Know+About+People&qid=1695098767&s=books&sprefix=100+things+every+designer+needs+to+know+about+people%2Cstripbooks%2C502&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=13858f9f709b8305c36344504dbdd2c7&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/100things.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Hooked-Guide-Building-Habit-Forming-Products/dp/1494277530?crid=1EF1K8VHTKE3M&keywords=Hooked%3A+How+to+Build+Habit-Forming+Products&qid=1695098791&s=books&sprefix=hooked+how+to+build+habit-forming+products%2Cstripbooks%2C521&sr=1-4&linkCode=li2&tag=uxchecklist-20&linkId=926c83ea6e73da75b08c207a6d130cd8&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/hooked.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/UX-Strategy-Innovative-Digital-Products/dp/1449372864?crid=1Y926RO841GNE&keywords=UX+Strategy%3A+How+to+Devise+Innovative+Digital+Products+that+People+Want&qid=1695098826&s=books&sprefix=ux+strategy+how+to+devise+innovative+digital+products+that+people+want%2Cstripbooks%2C922&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=d20345bbb14662ebede741d2be775487&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/uxstrategy.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Information-Architecture-World-Wide-Web/dp/1565922824?crid=32QNPSDO9OIEZ&keywords=Information+Architecture+for+the+World+Wide+Web&qid=1695098853&s=books&sprefix=information+architecture+for+the+world+wide+web%2Cstripbooks%2C695&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=b812500471f85aab5870c42b74243478&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/information.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Prototyping-Practitioners-Todd-Zaki-Warfel/dp/1933820217?crid=3RBZCOGJ300H6&keywords=Prototyping%3A+A+Practitioner%E2%80%99s+Guide&qid=1695098882&s=books&sprefix=prototyping+a+practitioner+s+guide%2Cstripbooks%2C539&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=64d7fc872f8bba97dffe503405359bb2&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/prototyping.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/About-Face-Essentials-Interaction-Design/dp/1118766571?crid=3QC09S8A6NVUU&keywords=About+Face%3A+The+Essentials+of+Interaction+Design&qid=1695098906&s=books&sprefix=prototyping+a+practitioner+s+guide%2Cstripbooks%2C640&sr=1-1&ufe=app_do%3Aamzn1.fos.006c50ae-5d4c-4777-9bc0-4513d670b6bc&linkCode=li2&tag=uxchecklist-20&linkId=52a73e2f384b537ac274056fba92ede2&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/aboutface.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Mapping-Experiences-Complete-Alignment-Blueprints/dp/1492076635?crid=397LO9VR5P8TU&keywords=Mapping+Experiences&qid=1695098934&s=books&sprefix=mapping+experiences%2Cstripbooks%2C614&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=7b2aff35958ee56bbbd62e73fd2af22f&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/mapping.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Designing-Mind-Understanding-Interface-Guidelines/dp/0128182024?crid=38YJETWTV57FE&keywords=Designing+with+the+Mind+in+Mind%3A+Simple+Guide+to+Understanding+User+Interface+Design+Guidelines&qid=1695098969&s=books&sprefix=designing+with+the+mind+in+mind+simple+guide+to+understanding+user+interface+design+guidelines%2Cstripbooks%2C626&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=eb7c0dfded6259138b13bca12417e004&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/designing.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Microinteractions-Full-Color-Designing-Details/dp/1491945923?crid=1P21BYY3DJ0K3&keywords=Microinteractions%3A+Designing+with+Details&qid=1695098997&s=books&sprefix=designing+with+the+mind+in+mind+simple+guide+to+understanding+user+interface+design+guidelines%2Cstripbooks%2C613&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=6cba7f2a26c9d3abc40243e315ac3630&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/microinteractions.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/User-Story-Mapping-Discover-Product/dp/1491904909?_encoding=UTF8&qid=1695099025&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=0b653fbe0c2f27b3a961e82cd31f95dc&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/userstory.jpg" ></a>
+         </div>
+         <div class="image-card">
+            <a href="https://www.amazon.com/Designing-Multi-Device-Experiences-Ecosystem-Approach/dp/1449340385?crid=36F5YBML6ER69&keywords=Designing+Multi-Device+Experiences&qid=1695099049&s=books&sprefix=designing+multi-device+experiences%2Cstripbooks%2C518&sr=1-1&linkCode=li2&tag=uxchecklist-20&linkId=dda4dacc5936951b483efb9b29dc5850&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/designingmulti.jpg" ></a>
+         </div>
+    </div>
+    <footer id="footer" class="flexcontainer hide-for-print custom_footer">
+
+ 
+        <div class="footerColumn">
+          <div class="footer_col">
+            <h3>Recommended Design Books</h3>
+            <div class="books_design">
+                <div class="book_box">
+                <a href="https://www.amazon.com/Dont-Make-Think-Revisited-Usability/dp/0321965515?crid=CLDUAQXTQ0B8&keywords=don%27t+make+me+think&qid=1691576015&s=books&sprefix=don%27t+make+me+%2Cstripbooks%2C500&sr=1-1&linkCode=li1&tag=uxchecklist-20&linkId=d8e377e4582ed3946b181ccb85d38619&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/first-book.png"></a> 
+                </div>
+                 <div class="book_box">
+                <a href="https://www.amazon.com/Design-of-Everyday-Things-audiobook/dp/B07L5Y9HND?keywords=the+design+of+everyday+things&qid=1691576063&s=books&sprefix=the+design+of+eve%2Cstripbooks%2C407&sr=1-1&linkCode=li1&tag=uxchecklist-20&linkId=9c1c021f81ff6ba39d748e46d8373d8e&language=en_US&ref_=as_li_ss_il" target="_blank"><img border="0" src="img/second-book.jpg"></a> 
+                </div>
+            </div>
+          </div>
+         </div>
+         
+          <div class="footerColumn">
+              <div class="footer_col">
+                  <h3>Shop Highlight</h3>
+                  <div class="shop_list">
+                      <div class="img_box"> <a href="https://uxchecklist.bigcartel.com" target="_blank"><img src="img/footer-banner.png"></a></div>
+                      <div class="desc_text">
+                          <h4>Shop Exclusive UX Posters</h4>
+                          <p>Transform your workspace!</p>
+                          <div class="shop_btn"><a class="btn" href="https://uxchecklist.bigcartel.com" target="_blank">Shop Now</a></div>
+                      </div>
+                  </div>
+
+              </div>
+          </div>
+         
+          <div class="footerColumn">
+          <div class="footer_col">
+            <h3>Advertising Space</h3> 
+              <div class="advertising_list">      
+                  <h4>Get $250 OFF on Springboard courses</h4>
+                   <div class="add_img"><a href="https://docs.google.com/forms/d/e/1FAIpQLSeOE59fAKZMMBPMjvP8egpIRX7-f7z2MqHod26gIgOnUq8e4w/viewform?usp=sf_link" target="_blank"><img src="img/springboard.png"></a></div> 
+              </div>
+            </div>
+         </div>
+        <div class="footerColumn footerToolbar">
+            <h3>Tools</h3>
+            <div id="toolbar" class="hide-for-print">
+                <button id="print" type="button">Print</button>
+                <button id="reset" class="resetBtn">Reset</button>
+                <a id="github" class="button" href="https://github.com/uxchecklist/uxchecklist.github.io" target="_blank">Fork</a>
+            </div>
+
+            <div class="hide-for-print clearfix">
+                <a id="typeformLink" class="typeform-share button" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank"><i class="fa fa-comment-o"></i>Tell us what you think!</a>
+                <script>
+                (function() {
+                    var qs, js, q, s, d = document,
+                        gi = d.getElementById,
+                        ce = d.createElement,
+                        gt = d.getElementsByTagName,
+                        id = 'typef_orm',
+                        b = 'https://s3-eu-west-1.amazonaws.com/share.typeform.com/';
+                    if (!gi.call(d, id)) {
+                        js = ce.call(d, 'script');
+                        js.id = id;
+                        js.src = b + 'share.js';
+                        q = gt.call(d, 'script')[0];
+                        q.parentNode.insertBefore(js, q)
+                    }
+                    id = id + '_';
+                    /*if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}*/
+                })()
+                </script>
+            </div>
+
+        </div>
+
+         
+        
+        
+    </footer>
+
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!-- <script src="js/vendor/jquery.js"></script> -->
+    <script>
+    window.Modernizr || document.write('<script type="text/javascript" src="js/vendor/modernizr.js">\x3C/script>');
+    window.jQuery || document.write('<script type="text/javascript" src="js/vendor/jquery.js">\x3C/script>');
+    </script>
+    <script src="js/garlic.js"></script>
+    <script src="js/jquery-labelauty.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script>
+    $(document).ready(function() {
+        $(":checkbox").labelauty({ label: false });
+        $("#checklist-form").garlic();
+        $("#print").on('click', function() {
+            ga('send', 'event', 'print', 'click', 'print');
+            window.print();
+        });
+        $("#reset").on('click', function() {
+            ga('send', 'event', 'reset', 'click', 'reset');
+            $('input:checkbox').each(function() {
+                $(this).prop('checked', false);
+            });
+            $("#checklist-form").garlic('destroy');
+        });
+        $("#footer a").on('click', function(e) {
+            var elm = e.currentTarget;
+            ga('send', 'event', 'footer', $(elm).attr('id'));
+        });
+        $("input:checkbox").on('change', function(e) {
+            var cb = $(this);
+            var id = cb.attr('id');
+            var isChecked = cb.is(':checked');
+            ga('send', 'event', {
+                'eventCategory': 'checkbox',
+                'eventAction': isChecked ? 'set' : 'clear',
+                'eventLabel': id
+            });
+        });
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true,
+            callbacks: {
+                open: function() {
+                    ga('send', 'event', 'popup', 'open', $(this.content).attr('id'));
+                },
+                close: function() {
+                    ga('send', 'event', 'popup', 'close', $(this.content).attr('id'));
+                }
+            }
+        });
+    });
+    //realtime api
+    var checkboxes = {};
+    var view = null;
+    var controller = null;
+    $().ready(function() {
+        var isFn = function(id, e) { return $(e).is(':checked'); };
+        var setFn = function(id, e, val) {
+            $(e).prop('checked', val);
+            $(e).garlic('persist');
+        };
+        $('input:checkbox').each(function() {
+            var id = $(this).attr('id');
+            checkboxes[id] = new Realtime.Model.CheckBox(id, this, isFn, setFn);
+        });
+        view = new Realtime.View(checkboxes);
+        var cb = view.checkboxes;
+        console.log(cb);
+        controller = new Realtime.Controller(view);
+        gapi.load("auth:client,drive-realtime,drive-share", function() {
+            controller.init();
+            $('form').on('change', 'input:checkbox', function(ev) {
+                console.log(ev);
+                controller.onCheckBoxChange($(ev.target).attr('id'));
+            });
+            var signinSuccess = function() {
+                $('#signin-do').hide();
+                $('#signin-fail').hide();
+                $('#signin-success').show();
+                $("#reset").on('click', function() {
+                    controller.save();
+                });
+            };
+            var signinFailed = function() {
+                $('#signin-fail').show();
+            };
+            controller.auth(true,
+                signinSuccess,
+                function() { $('#signin-do').show(); }
+            );
+            $('#signin').on('click', function() {
+                controller.auth(false, signinSuccess, signinFailed);
+            });
+        });
+    });
+    </script>
+    <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
+    <script type="text/javascript" src="js/realtime.js"></script>
+    <script type="text/javascript" src="js/index-single.js"></script>
+    
+</body>
+
+</html>

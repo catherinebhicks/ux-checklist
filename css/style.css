@@ -1026,7 +1026,7 @@ div#sharebox {
   margin: 10px 0; }
 
 #footer {
-  padding: 2rem 2rem 100px;
+  padding: 2rem 2rem 50px;
   background-color: #f1f1f1;
   -webkit-box-align: normal;
       -ms-flex-align: normal;
@@ -1073,14 +1073,14 @@ div#sharebox {
   width: 100%; }
   .footerColumn h3 {
     font-size: 20px;
-    margin: 10px 0;
+    margin: 0 0 20px;
     font-weight: 600; }
   .footerColumn h4 {
-    margin: 20px 0 10px;
+    margin: 0 0 10px;
     font-weight: 400; }
   .footerColumn #toolbar {
     text-align: center;
-    margin: 20px 0; }
+    margin: 0 0 25px; }
   @media screen and (min-width: 900px) {
     .footerColumn {
       margin: 0;
@@ -1866,3 +1866,52 @@ body,
   .st-content-inner {
     height: 1000px;
     page-break-after: auto; } }
+
+
+
+/*new css start here*/
+.footer_inner {display: flex;justify-content: space-between;width: 100%;flex-wrap: wrap;}
+.custom_col{width: 33.33%;padding: 0 15px;text-align: left;}
+/*.footer_col h3 {font-weight: 500;font-size: 20px;margin-bottom:25px;}*/
+.books_design {display: flex;flex-wrap: wrap;width: 100%;}
+.book_box {background: #f5f5f5;padding: 5px;margin-right: 10px;border: 1px solid #cccccc30;max-width: 150px;box-sizing: border-box;}
+.book_box img{max-width: 100%;}
+.book_box a{display: inline-block;}
+.shop_list {display: flex;flex-wrap: wrap;width: 100%;}
+.shop_list {display: flex;flex-wrap: wrap;width: 100%;align-items: center;}
+.img_box {width: 100%;max-width: 170px;padding-right: 15px;box-sizing: border-box;}
+.img_box img{max-width: 100%;}
+.shop_list a,.shop_list a:hover{text-decoration: none;color:#000;}
+.shop_list .btn {color: #00F;font-size: 14px;border: 1px solid #0000FF2E;padding: 5px 10px;border-radius: 31px;margin-top: 7px;display: inline-block;}
+.add_img {width: 100%;max-width: 320px;}
+.add_img img{max-width: 100%;}
+.shop_list .btn:hover {border: 1px solid #999;}
+.books-card { flex-wrap: wrap; display: flex; }
+.image-card { display: grid; border: 1px solid #f1f1f1; padding: 20px; width: 20%; place-items: center; }
+.image-card img { max-width: 236px; width: 100%; }
+
+@media screen and (min-width: 1250px) and (max-width: 1359px){
+.book_box {max-width: 80px;padding-bottom: 0;}   
+.img_box {max-width: 100px;}  
+.footerColumn #toolbar {text-align: left;}
+#footer {justify-content: flex-start;} 
+.footerColumn {padding: 0 15px;}   
+}
+@media screen and (min-width: 768px) and (max-width: 1249px){
+.book_box {max-width: 80px;padding-bottom: 0;}   
+.img_box {max-width: 100px;}  
+.footerColumn #toolbar {text-align: left;}
+#footer {justify-content: flex-start;} 
+.footerColumn {padding: 0 15px;width: 50%;margin: 15px 0;text-align: left;}   
+}
+@media screen and (max-width: 767px) {
+  .image-card {width: 100%; } 
+.books_design {justify-content: center;} 
+.shop_list {justify-content: center;} 
+.desc_text {padding-top: 5px;}
+.footerColumn h3 {margin-bottom: 15px;padding-top: 15px;}
+.advertising_list .add_img {margin: 0 auto;}
+.book_box{max-width: 120px;} 
+.img_box {max-width: 100%;padding: 0 0 10px;}
+}
+/*new css end here*/
