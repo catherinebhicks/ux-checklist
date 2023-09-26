@@ -1089,7 +1089,7 @@ div#sharebox {
       .footerColumn h3, .footerColumn h4 {
         text-align: left; }
       .footerColumn #toolbar {
-        text-align: right; } }
+        text-align:left; } }
 
 *,
 *:after,
@@ -1889,7 +1889,9 @@ body,
 .books-card { flex-wrap: wrap; display: flex; }
 .image-card { display: grid; border: 1px solid #f1f1f1; padding: 20px; width: 20%; place-items: center; }
 .image-card img { max-width: 236px; width: 100%; }
-
+div#title a {color: inherit;text-decoration: none;}
+.books-card-sec h1 { font-size: 26px; text-align: center; padding: 22px 0px; }
+.code-full { max-width: 130px; width: 100%; margin-top: 10px; }
 @media screen and (min-width: 1250px) and (max-width: 1359px){
 .book_box {max-width: 80px;padding-bottom: 0;}   
 .img_box {max-width: 100px;}  
