@@ -230,7 +230,7 @@
 
             <div class="hide-for-print clearfix">
                 <a id="typeformLink" class="typeform-share button" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank"><i class="fa fa-comment-o"></i>Tell us what you think!</a>
-                <a id="typeformLink" class="typeform-share button code-full" href="https://sovesove.typeform.com/to/Ok2qWy" data-mode="1" target="_blank"><i class="fa fa-comment-o"></i>Other credits</a>
+                <a id="pop-open" class="typeform-share button code-full" data-mode="1" target="_blank"><i class="fa fa-comment-o"></i>Other credits</a>
                 <script>
                 (function() {
                     var qs, js, q, s, d = document,
@@ -253,9 +253,18 @@
             </div>
 
         </div>
-
-         
-        
+        <div class="other-credits">
+            <div class="other-credits-inner">
+                <div id="close" class="close">×</div>
+                <p class="p-f">Inspired by <span>this</span>, <span>this</span> and </span>this</span></p>
+                <p>Also thanks to:</p>
+                <p><span>Manuela</span> for the superb illustrated icons.</p>
+                <p><span>Magnific Popup</span> for this responsive modal popup.</p>
+                <p><span>Garlics</span> for the garlic, which everyone knows helps you save digital things locally in your browser.</p>
+                <p><span>Labelauty</span> for the checkbox beautifier.</p>
+                <p><span>Font Awesome</span> for the iconic font.</p>
+            </div>
+        </div>
         
     </footer>
 
@@ -355,6 +364,16 @@
             });
         });
     });
+    </script>
+       <script>
+        $(document).ready(function() {
+            $('#pop-open').click(function() {
+                $('.other-credits').addClass('bg-black');
+            });
+            $('#close').click(function() {
+                $('.other-credits').removeClass('bg-black');
+            });
+        });
     </script>
     <script type="text/javascript" src="https://apis.google.com/js/api.js"></script>
     <script type="text/javascript" src="js/realtime.js"></script>
