@@ -116,16 +116,24 @@
     <form id="checklist-form" method="POST">
         <div class="row clearfix">
             <div id="Research" class="title"><span>Research</span></div>
-            <div class="cards">
-                <div class="img">
-                    <img class="left" src="img/icons128/Deep-Crawl.png" alt="">
+            <div class="task-card" data-task="competitive-analysis" data-category="research">
+                <div class="task-select">
+                    <input id="task-competitive-analysis" type="checkbox" class="task-checkbox">
+                    <label for="task-competitive-analysis" class="task-checkbox-label">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
-                <div class="card-content left">
-                    <label for="checkbox1">Competitive Analysis</label>
-                    <p>See how others solve similar problems and try to not reinvent the wheel. <a class="more hide-for-print" href="http://boxesandarrows.com/competitive-analysis-understanding-the-market-context/" target="_blank">Read more<span class="visually-hidden"> about Competitive Analysis: Understanding the Market Context</span></a></p>
+                <div class="task-icon">
+                    <img src="img/icons128/Deep-Crawl.png" alt="Competitive Analysis">
                 </div>
-                <div class="right">
-                    <input id="checkbox1" type="checkbox">
+                <div class="task-content">
+                    <h3 class="task-title">Competitive Analysis</h3>
+                    <p class="task-description">See how others solve similar problems and try to not reinvent the wheel.</p>
+                    <div class="task-meta">
+                        <span class="task-duration">2-4 days</span>
+                        <span class="task-difficulty">Beginner</span>
+                    </div>
+                    <a href="tasks/competitive-analysis.html" class="task-link">View Details →</a>
                 </div>
             </div>
             <div class="cards">
