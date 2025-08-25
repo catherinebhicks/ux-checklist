@@ -13,7 +13,7 @@
     <meta property="og:description" content="Start your next UX project with this checklist and don't forget about anything!" />
     <meta name="google-site-verification" content="3Dof5ybDW6vSpHqG5nnJubTZeQ9mYWihL5mPP02FxtA" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-modern.css" />
     <!-- moonmail.io embedded form styles (for better performance put this link in html head of your page) -->
     <link rel="stylesheet" href="https://static.moonmail.io/mm-embedded-form.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -64,7 +64,8 @@
     }(document, 'script', 'facebook-jssdk'));
     </script>
     <div id="printTitle" class="hidden">Project name: ________________________</div>
-    <header id="header" class="flexcontainer">
+    <header id="header">
+        <div class="container header-content">
         <div id="title" class="hide-for-print">
             <h1>UX Project Checklist</h1>
         </div>
@@ -108,7 +109,10 @@
             </div>
             <!-- Patreon END -->
         </div>
+        </div>
     </header>
+    <main>
+        <div class="container">
     <form id="checklist-form" method="POST">
         <div class="row clearfix">
             <div id="Research" class="title"><span>Research</span></div>
@@ -508,6 +512,8 @@
             </div>
         </div>
     </form>
+        </div>
+    </main>
     <footer id="footer" class="flexcontainer hide-for-print custom_footer">
 
  
