@@ -13,7 +13,7 @@
     <meta property="og:description" content="Start your next UX project with this checklist and don't forget about anything!" />
     <meta name="google-site-verification" content="3Dof5ybDW6vSpHqG5nnJubTZeQ9mYWihL5mPP02FxtA" />
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style-modern.css" />
     <!-- moonmail.io embedded form styles (for better performance put this link in html head of your page) -->
     <link rel="stylesheet" href="https://static.moonmail.io/mm-embedded-form.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
@@ -63,107 +63,97 @@
         fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));
     </script>
-    <div id="printTitle" class="hidden">Project name: ________________________</div>
-    <header id="header" class="flexcontainer">
-        <div id="title" class="hide-for-print">
-            <h1>UX Project Checklist</h1>
-        </div>
-        <div id="gdrivebox" class="hide-for-print flexgrow">
-            <span id="signin-do">
-                    <button id="signin"><i class="fa fa-sign-in"></i>Sign in with Google</button> to sync across devices.
-                    <a href="#signin-info" class="open-popup-link"></a>
-                </span>
-            <span id="signin-failed">Sign in failed! :(</span>
-            <span id="signin-success">You're signed in with Google.</span>
-            <div id="signin-info" class="white-popup mfp-hide">
-                <p>We use Google Drive to create and save a file on your account so you will be able to open the same checklist on all your connected devices.
-                </p>
-                <p>
-                    And guess what?! You can share it! </br>
-                    Well, yeah is not a big deal, but it come for free, yes like everything else, what I mean is that we didn't had to do anything for that, right? So basically you connect with Google, we create the file, you go to your Google Drive folder, try to find the new file, I have no idea where it is or what the name will be, the <a href="https://twitter.com/alefranz" target="_blank">guy</a> who did this didn't tell us, once you've found the file share it with your friends. Done! </br>
-                    When your friends connect their Google account they should see the same checklist status. </br>
-                    Magic isn't it? No! That's technology fool!
-                </p>
-                <p>Also, we will not use any of your data, we didn't have any kind of database or save something somewhere in any way, the file we create is yours and yours only and is the only thing we are able to do right now.
-                </p>
-                <p>
-                    Oh, and just want to remind you that if you still not believe it, everything is open source and you can check the github repo <a href="https://github.com/uxchecklist/uxchecklist.github.io" target="_blank">here</a> (feel free to fork it and do awesome things, or help us make it better).
-                </p>
+    <!-- Navigation Menu -->
+    <nav id="main-nav">
+        <div class="container nav-content">
+            <div class="nav-brand">
+                <h1>UX Project Planner</h1>
             </div>
-        </div>
-        <div id="sharebox" class="hide-for-print">
-            <ul>
-                <li>
-                    <!-- facebook plugin -->
-                    <div class="fb-like" data-href="http://uxchecklist.github.io/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="false"></div>
-                </li>
-                <li>
-                    <!-- linkedin plugin -->
-                    <script src="//platform.linkedin.com/in.js" type="text/javascript">
-                    lang: en_US
-                    </script>
-                    <script type="IN/Share" data-counter="right"></script>
-                </li>
-                <li>
-                    <!-- twitter plugin -->
-                    <a href="https://twitter.com/share" class="twitter-share-button" data-text="UX Project Checklist: The UX Design Process From A to Z" data-via="sovesove" data-hashtags="ux,uxchecklist">Tweet</a>
-                    <script>
-                    ! function(d, s, id) {
-                        var js, fjs = d.getElementsByTagName(s)[0],
-                            p = /^http:/.test(d.location) ? 'http' : 'https';
-                        if (!d.getElementById(id)) {
-                            js = d.createElement(s);
-                            js.id = id;
-                            js.src = p + '://platform.twitter.com/widgets.js';
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }
-                    }(document, 'script', 'twitter-wjs');
-                    </script>
-                </li>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="#" class="nav-link">My Projects</a></li>
+                <li><a href="#" class="nav-link">Templates</a></li>
+                <li><a href="#" class="nav-link">Resources</a></li>
             </ul>
-        </div>
-        <div class="support-us-wrapper hide-for-print">
-            <!-- PayPal donate button -->
-            <div class="wrapper-paypal-button hide-for-print">
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                    <input type="hidden" name="cmd" value="_s-xclick">
-                    <input type="hidden" name="hosted_button_id" value="CZJKKFXRARWJL">
-                    <input type="image" src="https://www.paypalobjects.com/en_GB/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!"> <img alt="" border="0" src="https://www.paypalobjects.com/en_GB/i/scr/pixel.gif" width="1" height="1">
-                </form>
+            <div class="nav-actions">
+                <button class="button-secondary" id="view-plan-btn">View Plan</button>
+                <button class="button-primary" id="create-plan-btn">Create Project Plan</button>
             </div>
-            <!-- PayPal donate button END -->
-            <!-- Patreon -->
-            <div class="wrapper-patreon-button hide-for-print not-released">
-                <iframe src="/widgets/patreon.html" frameborder="0" height="auto" scrolling="no" width="100%"></iframe>
-            </div>
-            <!-- Patreon END -->
+            <button class="mobile-menu-toggle" id="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-    </header>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Create Your Custom UX Project Plan</h1>
+                    <p class="hero-description">Select the UX tasks you need for your project and generate a comprehensive project plan with timelines, checklists, and resources.</p>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number" id="selected-count">0</span>
+                            <span class="stat-label">Tasks Selected</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">10</span>
+                            <span class="stat-label">Categories</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">27</span>
+                            <span class="stat-label">Total Tasks</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
     <form id="checklist-form" method="POST">
         <div class="row clearfix">
             <div id="Research" class="title"><span>Research</span></div>
-            <div class="cards">
-                <div class="img">
-                    <img class="left" src="img/icons128/Deep-Crawl.png" alt="">
+            <div class="task-card" data-task="competitive-analysis" data-category="research">
+                <div class="task-select">
+                    <input id="task-competitive-analysis" type="checkbox" class="task-checkbox">
+                    <label for="task-competitive-analysis" class="task-checkbox-label">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
-                <div class="card-content left">
-                    <label for="checkbox1">Competitive Analysis</label>
-                    <p>See how others solve similar problems and try to not reinvent the wheel. <a class="more hide-for-print" href="http://boxesandarrows.com/competitive-analysis-understanding-the-market-context/" target="_blank">Read more<span class="visually-hidden"> about Competitive Analysis: Understanding the Market Context</span></a></p>
+                <div class="task-icon">
+                    <img src="img/icons128/Deep-Crawl.png" alt="Competitive Analysis">
                 </div>
-                <div class="right">
-                    <input id="checkbox1" type="checkbox">
+                <div class="task-content">
+                    <h3 class="task-title">Competitive Analysis</h3>
+                    <p class="task-description">See how others solve similar problems and try to not reinvent the wheel.</p>
+                    <div class="task-meta">
+                        <span class="task-duration">2-4 days</span>
+                        <span class="task-difficulty">Beginner</span>
+                    </div>
+                    <a href="tasks/competitive-analysis.html" class="task-link">View Details →</a>
                 </div>
             </div>
-            <div class="cards">
-                <div class="img">
-                    <img class="left" src="img/icons128/WebAnalytic.png" alt="">
+            <div class="task-card" data-task="data-analysis" data-category="research">
+                <div class="task-select">
+                    <input id="task-data-analysis" type="checkbox" class="task-checkbox">
+                    <label for="task-data-analysis" class="task-checkbox-label">
+                        <span class="checkmark"></span>
+                    </label>
                 </div>
-                <div class="card-content left">
-                    <label for="checkbox2">Data analysis</label>
-                    <p>Do you have all the useful data you need? Try to have a look at funnels, clicks, page views, performances... <a class="more hide-for-print" href="http://www.nngroup.com/articles/analytics-user-experience/" target="_blank">Read more<span class="visually-hidden"> about Three Uses for Analytics in User-Experience Practice</span></a></p>
+                <div class="task-icon">
+                    <img src="img/icons128/WebAnalytic.png" alt="Data Analysis">
                 </div>
-                <div class="right">
-                    <input id="checkbox2" type="checkbox">
+                <div class="task-content">
+                    <h3 class="task-title">Data Analysis</h3>
+                    <p class="task-description">Analyze funnels, clicks, page views, and performance metrics to understand user behavior.</p>
+                    <div class="task-meta">
+                        <span class="task-duration">3-5 days</span>
+                        <span class="task-difficulty">Intermediate</span>
+                    </div>
+                    <a href="tasks/data-analysis.html" class="task-link">View Details →</a>
                 </div>
             </div>
             <div class="cards">
@@ -538,6 +528,22 @@
             </div>
         </div>
     </form>
+
+    <!-- Poster Button Section -->
+    <div class="poster-button-container">
+        <div class="poster-button-text">
+            <h3>Transform Your Workspace!</h3>
+            <p>Get the UX Checklist poster for your office or studio</p>
+        </div>
+        <a href="https://uxchecklist.bigcartel.com" target="_blank" class="poster-button">
+            <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+            </svg>
+            Get the Poster
+        </a>
+    </div>
+        </div>
+    </main>
     <footer id="footer" class="flexcontainer hide-for-print custom_footer">
 
  
@@ -635,7 +641,7 @@
         <div class="other-credits">
             <div class="other-credits-inner">
                 <div id="close" class="close">×</div>
-                <p class="p-f">Inspired by <span>this</span>, <span>this</span> and </span>this</span></p>
+                <p class="p-f">Inspired by <span>this</span>, <span>this</span> and <span>this</span></p>
                 <p>Also thanks to:</p>
                 <p><span>Manuela</span> for the superb illustrated icons.</p>
                 <p><span>Magnific Popup</span> for this responsive modal popup.</p>
